@@ -689,251 +689,199 @@ form button a {
     font-weight: bold;
   }
 }
-/* Small screens (481px to 767px) - Large phones */
-@media (min-width: 481px) and (max-width: 767px) {
+/* Tablets and larger mobile devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
     .container {
         margin-left: 10px;
         margin-right: 10px;
         padding: 20px;
-        height: 230vh;
-        padding-bottom: 50px;
-        width: 600px;
     }
 
-    /* Header becomes hamburger menu territory */
+    /* Header adjustments */
     .image-banner {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
+        margin-left: 10px;
     }
-    .company-logo img {
-        position: fixed;
-        width: 100px;
-        height: 70px;
-        margin-bottom: 10px;
-    }
+    
     .company-name {
-        margin-left: 0;
-        margin-top: 0;
-    }
-    .company-name h2 {
-        font-size: 1.3rem;
-    }
-
-    /* Hide desktop nav, show mobile menu */
-    .nav ul {
-        margin-left: 120px;
-        gap: 5px;
-    }
-    .nav li {
+        margin-left: 80px;
         font-size: 1.5rem;
     }
-   header.scrolled {
-    margin-top: 40px;
-     }
-   header {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 20px;
     
-   }
+    .image-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation */
+    .nav ul {
+        justify-content: center;
+        margin-left: 0;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .nav li {
+        font-size: 1rem;
+    }
+
     /* Hero section */
     .center-bar {
-        width: 700px;
         height: 600px;
-        padding: 10px;
-        padding-left: 100px;
-      padding-right: 100px;
+        padding: 15px;
     }
+    
     .rock {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 120px;
-        font-size: 1.3rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 150px;
+        font-size: 1.5rem;
     }
+    
     .rock h1 {
-        font-size: 1.8rem;
-        line-height: 1.4;
+        font-size: 2.5rem;
     }
+    
     .rock button {
         font-size: 1rem;
-        height: 45px;
-        margin: 10px 5px;
+        height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-     .rock p {
-        font-size: 1.5rem;
-        line-height: 1.4;
-     }
-    /* Features - 2 columns */
+
+    /* Main section grid */
     .main-section {
-        grid-template-columns: 1fr ;
-        gap: 20px;
-        padding-left: 50px;
-        margin-left: 50px;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
     }
+    
     .item {
+        font-size: 1rem;
         padding: 15px;
-        justify-self: center;
-        width: 600px;
     }
+    
     .item1 {
         padding-left: 50px;
         padding-right: 50px;
-        width: 600px;
-
     }
+    
     .item1 h2 {
-        font-size: 2rem;
-    }
-    .item1 p {
-        font-size: 1.5rem;
-    }
-    .item h3 {
         font-size: 1.8rem;
     }
-    .item p {
-        font-size: 1.5rem;
+    
+    .item1 p {
+        font-size: 1.2rem;
     }
 
-    /* Pricing - Stack vertically */
+    /* Great section */
     .great {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
     }
-    .main-area {
-        width: 800px;
-        height:  230vh;
-        padding-bottom: 100px;
-        padding-right: 100px;
+    
+    .great h2 {
+        font-size: 1.8rem;
     }
+    
+    .great p {
+        font-size: 1rem;
+    }
+
+    /* Command cards */
     .measures {
         height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+    
     .command {
-        display: block;
-        width: 100%;
-        margin: 20px auto;
+        width: 45%;
+        margin: 10px 2%;
         height: auto;
-        padding-left: 100px;
-        padding-right: 0px;
-    }
-        #next li {
-        margin: 0;
-        word-spacing: 5px;
-        font-size: 1.5rem;
-    }
-    .great h2 {
-        font-size: 2rem;
-    }
-    .great p {
-        font-size: 1.5rem;
-    }
-    #next p {
-        font-size: 1.5rem;
-    }
-    #next ul {
-         margin-left: 0;
-        padding: 0;
+        min-height: 300px;
+        display: inline-block;
+        vertical-align: top;
     }
     
-    #next h2 {
-        font-size: 2rem;
-        font-weight: bold;
-
-    }
-    #next h3 {
+    #next h2, #previous h2, #follow h2 {
         font-size: 1.5rem;
-    }
-       #next button {
-        font-size: 1.5rem;
-       }
-    #previous h2 {
-        font-size: 2rem;
-        word-spacing: 5px;
-        font-weight: bold;
-
-    }
-    #previous h3 {
-        font-size: 1.5rem;
-    }
-    #previous ul {
-        margin-left: 0;
-        padding: 0;
-    }
-    #previous p {
-        font-size: 1.5rem;
+        margin-top: 5%;
     }
     
-    #previous li {
-        margin: 0;
-        word-spacing: 7px;
-        margin-left: 0;
-        font-size: 1.5rem;
-    }
-    #previous button {
-        margin-top: 100px;
-        font-size: 1.5rem;
+    #next li, #previous li, #follow li {
+        font-size: 1rem;
     }
     
-    #follow li{
-        word-spacing: 5px;
-        font-size: 1.5rem;
-    }
-    #follow p {
-        font-size: 1.5rem;
-    }
-    #follow h2 {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    #follow h3 {
-        font-size: 1.5rem;
-    }
-    #follow button {
-         font-size: 1.5rem;
+    #next button, #previous button, #follow button {
+        margin-top: 40px;
+        font-size: 1rem;
     }
 
-    /* Form adjustments */
-   .content p {
-    font-size: 1.5rem;
-   }
-   .content h3 {
-    font-size: 2rem;
-   }
+    /* Content section */
+    .content {
+        padding: 40px 20px;
+    }
+    
+    .content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    /* Form */
     form {
-        padding-left: 150px;
-        padding-right: 150px;
-        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        padding-top: 30px;
     }
+    
     form input {
-        width: 500px;
-
+        width: 100%;
+        max-width: 400px;
+        height: 35px;
     }
+    
+    form .message input {
+        height: 80px;
+    }
+    
     form label {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
+    
     form button {
-        font-size: 1.5rem;
-        width: 500px;
+        width: 100%;
+        max-width: 400px;
+        padding: 15px;
+        margin-top: 60px;
+        font-size: 1rem;
     }
-    .side-bar p {
-        font-size: 1.5rem;
-    }
-    .footer h4 {
-        font-size: 2rem;
-    }
-    .footer p {
-        font-size: 1.5rem;
-    }
-    .footer {
-        justify-self: center;
-        margin: 0;
-        width: 750px;
-        padding-right: 200px;
-        
-    }
-} 
 
+    /* Footer */
+    .footer {
+        padding: 30px 20px;
+    }
+    
+    .footer h4 {
+        font-size: 1rem;
+    }
+    
+    .footer p {
+        font-size: 1rem;
+    }
+    
+    .footer p span {
+        margin-left: 10px;
+    }
+
+    /* Side bar */
+    .side-bar {
+        padding: 15px;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
   /* General Adjustments */
