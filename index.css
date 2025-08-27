@@ -948,12 +948,16 @@ form button a {
     }
     .center-bar {
         width: 900px;
+        padding-left: 250px;
+        padding-right: 250px;
+        text-align: center;
     }
 
     /* Header - Mobile first approach */
     header {
         padding: 10px;
         padding-right: 20px;
+        margin-left: 50px;
     }
     header.scrolled {
         padding-top: 40px;
@@ -979,6 +983,7 @@ form button a {
     .rock {
         margin-top: 200px;
         width: 600px;
+        margin-left: 100px;
     }
     .rock button a {
           font-size: 1.5rem;
