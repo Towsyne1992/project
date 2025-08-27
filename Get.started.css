@@ -1,0 +1,512 @@
+body {
+  background: url(./images/navy\ blue.webp);
+}
+.header {
+    padding: 20px;
+    justify-self: center;
+    
+    }
+    .image-banner {
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    .logo img {
+        display: block;
+       position: absolute;
+       margin-top: 0;
+    }
+    .company-name {
+        position: relative;
+         margin-left: 100px;
+   }
+   .image-banner h2 {
+      font-size: 2rem;
+       font-weight: bold;
+       color: #fff;
+   }
+   .header p {
+    color: #fff;
+    font-size: 1.5rem;
+   }
+   .container {
+    justify-self: center;
+   }
+   .main-section {
+    background-color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+    padding-top: 50px;
+    border-radius: 5px;
+   }
+   h3 {
+    font-size: 2rem;
+    font-weight: bold;
+   }
+   .main-section p {
+    text-align: center;
+   }
+   .purpose p{
+     text-align: center;
+   }
+   .purpose span {
+    color: #008000;
+    margin-left: 5px;
+    
+   }
+   .purpose p a {
+    text-decoration: none;
+   }
+   form {
+    justify-self: center;
+   }
+   form p {
+    color: #708090;
+   }
+
+   form span{
+     color: red;
+   }
+   form input {
+    width: 400px;
+    height: 40px;
+   border-radius: 10px;
+   border: 0.7px solid #708090;
+   }
+   button {
+    background-color: #008000;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+     font-size: 1.2rem;
+     border: none;
+     margin-top: 50px;
+   }
+   .footer {
+    padding: 50px;
+    justify-self: center;
+    color: #fff;
+   }
+
+
+   /* Your existing CSS above, then add these media queries */
+
+/* ========================================
+   RESPONSIVE MEDIA QUERIES FOR REGISTRATION FORM
+======================================== */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .main-section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 60px 120px 180px 120px;
+    }
+    
+    form input {
+        width: 500px;
+        height: 45px;
+    }
+    
+    button {
+        width: 500px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Medium to Large screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .image-banner {
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    
+    .company-name {
+        margin-left: 80px;
+    }
+    
+    .main-section {
+        margin: 30px 40px;
+        padding: 50px 80px 120px 80px;
+    }
+    
+    form input {
+        width: 450px;
+        height: 42px;
+    }
+    
+    button {
+        width: 450px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium screens (768px to 991px) - Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .header {
+        padding: 25px 15px;
+    }
+    
+    .image-banner {
+        margin-top: 60px;
+        margin-left: 15px;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 120px;
+        height: 80px;
+    }
+    
+    .company-name {
+        margin-left: 70px;
+    }
+    
+    .image-banner h2 {
+        font-size: 1.8rem;
+    }
+    
+    .header p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .main-section {
+        margin: 25px 20px;
+        padding: 40px 60px 100px 60px;
+        border-radius: 10px;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .main-section p {
+        font-size: 1rem;
+    }
+    
+    
+    
+    form input {
+        width: 350px;
+        height: 40px;
+    }
+    form label {
+      float: left;
+    }
+    
+    button {
+        width: 350px;
+        height: 40px;
+        font-size: 1.1rem;
+        margin-top: 40px;
+    }
+    
+    .footer {
+        padding: 40px 15px;
+        text-align: center;
+    }
+}
+
+/* Small screens (481px to 767px) - Large phones */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header {
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    .image-banner {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    
+    .logo img {
+        position: static;
+        width: 100px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    
+    .company-name {
+        margin-left: 0;
+    }
+    
+    .image-banner h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .header p {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 15px;
+        line-height: 1.4;
+    }
+    
+    .main-section {
+        margin: 20px 15px;
+        padding: 35px 30px 80px 30px;
+        border-radius: 15px;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .main-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .purpose p {
+        font-size: 1rem;
+    }
+    
+    
+    form p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    form input {
+        width: 300px;
+        height: 38px;
+    }
+    form label {
+      float: left;
+    }
+    
+    button {
+        width: 300px;
+        height: 38px;
+        font-size: 1.1rem;
+        margin-top: 35px;
+    }
+    
+    .footer {
+        padding: 35px 10px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small screens (320px to 480px) - Small phones */
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header {
+        padding: 15px 8px;
+        text-align: center;
+    }
+    
+    .image-banner {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    
+    .logo img {
+        position: static;
+        width: 80px;
+        height: 60px;
+        margin-bottom: 8px;
+    }
+    
+    .company-name {
+        margin-left: 0;
+    }
+    
+    .image-banner h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 8px 0;
+    }
+    
+    .header p {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.3;
+    }
+    
+    .main-section {
+        margin: 15px 10px;
+        padding: 30px 20px 60px 20px;
+        border-radius: 15px;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .main-section p {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+    
+    .purpose p {
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+    
+    .purpose span {
+        margin-left: 3px;
+    }
+    
+    
+    
+    form p {
+         
+        text-align: center;
+        font-size: 0.85rem;
+        margin: 10px 0 5px 0;
+    }
+    
+    form input {
+        width: 280px;
+        height: 36px;
+        border-radius: 8px;
+
+    }
+    form label {
+      float: left;
+    }
+    
+    button {
+        width: 280px;
+        height: 36px;
+        font-size: 1rem;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+    
+    .footer {
+        padding: 30px 8px;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+}
+
+/* Very small screens (below 320px) */
+@media (max-width: 319px) {
+    .header {
+        padding: 10px 5px;
+    }
+    
+    .image-banner h2 {
+        font-size: 1.2rem;
+    }
+    
+    .header p {
+        font-size: 1rem;
+    }
+    
+    .main-section {
+        margin: 10px 5px;
+        padding: 25px 15px 50px 15px;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .main-section p {
+        font-size: 0.8rem;
+    }
+    
+    form input {
+        width: 250px;
+        height: 34px;
+    }
+    
+    button {
+        width: 250px;
+        height: 34px;
+        font-size: 0.9rem;
+    }
+    
+    .footer {
+        padding: 25px 5px;
+        font-size: 0.8rem;
+    }
+}
+
+/* ========================================
+   UTILITY IMPROVEMENTS
+======================================== */
+
+/* Ensure form elements are always centered */
+@media (max-width: 991px) {
+    form {
+        text-align: center;
+    }
+    
+    form input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Improve background on mobile */
+@media (max-width: 767px) {
+    body {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+}
+
+/* Focus states for better accessibility */
+form input:focus {
+    outline: 2px solid #008000;
+    outline-offset: 2px;
+    border-color: #008000;
+}
+
+button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
