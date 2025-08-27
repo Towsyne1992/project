@@ -957,7 +957,7 @@ form button a {
     header {
         padding: 10px;
         padding-right: 20px;
-        margin-left: 50px;
+        margin-left: 70px;
     }
     header.scrolled {
         padding-top: 40px;
@@ -981,9 +981,9 @@ form button a {
         font-size: 1.2rem;
     }
     .rock {
-        margin-top: 200px;
+        margin-top: 120px;
         width: 600px;
-        margin-left: 100px;
+        margin-left: 120px;
     }
     .rock button a {
           font-size: 1.5rem;
