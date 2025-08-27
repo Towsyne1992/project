@@ -1086,7 +1086,7 @@ form button a {
     .great {
         width: 500px;
         justify-self: center;
-        padding-left: 150px;
+        padding-left: 200px;
         align-items: center;
     }
     .great h2 {
@@ -1102,7 +1102,7 @@ form button a {
     }
     .main-area {
         padding-bottom: 20px;
-        width: 800px;
+        width: 900px;
         padding-right: 100px;
         justify-self: center;
         padding-left: 250px;
@@ -1117,6 +1117,7 @@ form button a {
         width: 700px;
         margin: 15px auto;
         height: 70%;
+        margin-left: 150px;
 
     }
     .command h2 {
