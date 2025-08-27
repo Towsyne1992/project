@@ -933,266 +933,136 @@ form button a {
         
     }
 } 
-/* Mobile devices (320px to 480px) */
-@media (min-width: 320px) and (max-width: 480px) {
-    
-    /* Body and container adjustments */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* General and Centering */
     body {
-        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
-    
-    .container {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 20px;
-    }
-    
-    /* Header responsive */
-    header {
+
+    .container, .main-area {
+        margin: 0 10px; /* Reduced side margins for perfect fit */
         padding: 10px;
+    }
+
+    /* Header and Navigation */
+    header {
+        position: static; /* Change from fixed to static for better mobile flow */
+    }
+
+    .correct {
+        flex-direction: column;
+        align-items: center;
     }
     
     .image-banner {
         flex-direction: column;
-        margin-left: 10px;
         align-items: center;
-        text-align: center;
+        margin: 10px 0;
     }
-    
+
     .company-logo img {
-        position: relative;
-        width: 60px;
-        height: auto;
+        position: static;
+        margin: 0;
     }
     
     .company-name {
-        margin-left: 0;
-        margin-top: 10px;
-        font-size: 1.2rem;
+        position: static;
+        margin: 10px 0;
+        text-align: center;
     }
-    
-    .image-banner h2 {
-        font-size: 1.5rem;
-    }
-    
-    /* Navigation mobile-first */
+
     .nav ul {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
         gap: 0.5rem;
-        margin-left: 0;
-        padding: 10px;
-        margin-top: 10px;
     }
-    
+
     .nav li {
-        font-size: 1rem;
         text-align: center;
-    }
-    
-    /* Hero section adjustments */
-    .center-bar {
-        height: 500px;
-        padding: 15px;
-    }
-    
-    .rock {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 80px;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-    
-    .rock h1 {
-        font-size: 2.5rem;
-        line-height: 1.2;
-    }
-    
-    .rock button {
-        font-size: 1rem;
         width: 100%;
-        max-width: 250px;
-        height: 45px;
-        margin-top: 20px;
     }
-    
-    /* Main section grid to single column */
-    .main-section {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+
+    .nav a {
+        display: block; /* Make links full-width for easier tapping */
         padding: 10px;
     }
-    
-    .item {
-        padding: 15px;
-        font-size: 1rem;
-        margin-bottom: 15px;
+
+    .nav a:hover {
+        background-color: transparent; /* Adjust hover for touch devices */
+        color: #008000;
     }
-    
-    .item1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        display: block;
-    }
-    
-    .item1 h2 {
-        font-size: 1.5rem;
-    }
-    
-    .item1 p {
-        font-size: 1.1rem;
-    }
-    
-    /* Main area adjustments */
-    .great {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 50px;
-    }
-    
-    .great h2 {
-        font-size: 1.5rem;
-    }
-    
-    .great p {
-        font-size: 1rem;
-    }
-    
-    /* Command cards mobile layout */
-    .measures {
-        margin-left: 10px;
+
+    /* Main Sections */
+    .center-bar {
         height: auto;
-        padding-bottom: 50px;
+        padding: 20px 10px;
     }
-    
+
+    .rock {
+        padding: 20px 10px;
+        margin-top: 100px; /* Adjust top margin */
+        font-size: 1rem;
+    }
+
+    .rock h1 {
+        font-size: 2rem;
+    }
+
+    .main-section {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        gap: 20px;
+    }
+
+    .item1, .great {
+        display: block; /* Changes inline-block to block */
+        text-align: center;
+        padding: 0;
+        margin: 0 auto; /* Centers block elements horizontally */
+    }
+
     .command {
-        display: block;
-        width: calc(100% - 40px);
-        margin: 20px 10px;
+        display: block; /* Changes inline-block to block */
+        width: 90%; /* Occupy most of the width */
+        margin: 20px auto; /* Centers and adds spacing */
+    }
+    
+    .measures {
         height: auto;
-        min-height: 300px;
-        vertical-align: top;
+        margin: 0;
     }
-    
-    .command:hover {
-        transform: scale(1.02);
-    }
-    
-    /* Individual command styling */
-    #next, #previous, #follow {
-        padding: 20px;
-    }
-    
-    #next h2, #previous h2, #follow h2 {
-        font-size: 1.5rem;
-        margin-top: 5%;
-    }
-    
-    #next ul, #previous ul, #follow ul {
-        margin-top: 5%;
-        padding-left: 0;
-    }
-    
-    #next li, #previous li, #follow li {
-        font-size: 1rem;
-        margin-bottom: 8px;
-    }
-    
-    #previous h5 {
-        width: 60%;
-        font-size: 0.9rem;
-    }
-    
-    #next button, #previous button, #follow button {
-        margin-top: 40px;
-        font-size: 1rem;
-        padding: 12px;
-    }
-    
-    /* Content section */
-    .content {
-        padding: 30px 15px;
-    }
-    
-    .content h3 {
-        font-size: 1.5rem;
-    }
-    
-    .content p {
-        font-size: 1.1rem;
-    }
-    
-    /* Form responsive */
+
+    /* Form */
     form {
-        padding: 20px;
-        margin: 0 10px;
-        border-radius: 15px;
+        padding: 20px 10px; /* Reduced padding for smaller screens */
+        margin: 0 auto; /* Centers the form */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    form input {
-        width: 100%;
-        max-width: 280px;
-        height: 35px;
-        font-size: 14px;
-    }
-    
-    form .message input {
-        height: 80px;
-    }
-    
-    form label {
-        font-size: 1rem;
-        display: block;
-        text-align: left;
-        margin-bottom: 5px;
-        margin-top: 15px;
-    }
-    
+
+    form input,
+    form .message input,
     form button {
+        width: 100%; /* Make inputs and button full-width */
+        max-width: 300px; /* Keep a readable max-width */
+        box-sizing: border-box; /* Include padding/border in width */
+    }
+
+    form label {
+        float: none; /* Remove float for better stacking */
+        text-align: left;
         width: 100%;
-        max-width: 300px;
-        padding: 15px;
-        margin-top: 30px;
-        font-size: 1rem;
     }
-    
-    /* Sidebar */
-    .side-bar {
-        padding: 15px;
-    }
-    
+
     /* Footer */
     .footer {
-        padding: 30px 15px;
-        text-align: center;
-    }
-    
-    .footer h4 {
-        font-size: 1rem;
-    }
-    
-    .footer p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .footer p span {
-        margin-left: 10px;
-        display: inline-block;
-        margin-top: 5px;
-    }
-    
-    /* Utility classes for mobile */
-    .mobile-hidden {
-        display: none;
-    }
-    
-    .mobile-center {
-        text-align: center;
-    }
-    
-    .mobile-full-width {
-        width: 100%;
+        padding: 30px 10px;
     }
 }
 
