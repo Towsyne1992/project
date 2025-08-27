@@ -933,16 +933,15 @@ form button a {
         
     }
 } 
-      @media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   /* BODY AND CONTAINER */
   body {
     max-width: 100%;
   }
 
   .container {
-    margin: 0 15px; 
-
-    
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   /* HEADER */
@@ -972,7 +971,7 @@ form button a {
     font-size: 1.5rem;
     text-align: center;
   }
-  
+
   .nav ul {
     flex-direction: column;
     justify-content: center;
@@ -1016,25 +1015,10 @@ form button a {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-     .main-area {
-    /* Set left and right margins to 'auto' to ensure it's centered */
-    margin: 0 auto; 
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* FOOTER */
-  .footer {
-    /* Apply the same consistent margin as the container */
-    margin: 0 15px; 
-    padding: 20px;
-    text-align: center;
-  }
 
   .item1 {
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 50px;
   }
 
   .item1 h2 {
@@ -1044,8 +1028,6 @@ form button a {
   .item1 p {
     font-size: 1rem;
   }
-
-  
 
   .measures {
     height: auto;
@@ -1059,19 +1041,6 @@ form button a {
     margin: 20px auto;
     height: auto;
   }
-    .item {
-     margin-left: 50px;   
-    width: 90%; /* Occupy most of the available space */
-    margin: 0 auto; /* Center the block horizontally */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  }
-
-  .item1 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
 
   #next button,
   #previous button,
@@ -1114,7 +1083,6 @@ form button a {
     margin-top: 5px;
   }
 }
-
 
 
 
