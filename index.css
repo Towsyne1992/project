@@ -690,7 +690,249 @@ form button a {
   }
 }
 /* Small screens (481px to 767px) - Large phones */
-@media (min-width: 480px) and (max-width: 767px) {
+@@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+        height: 250vh;
+        padding-bottom: 50px;
+        width: 600px;
+    }
+
+    /* Header becomes hamburger menu territory */
+    .image-banner {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .company-logo img {
+        position: fixed;
+        width: 100px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .company-name {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .company-name h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Hide desktop nav, show mobile menu */
+    .nav ul {
+        margin-left: 120px;
+        gap: 5px;
+    }
+    .nav li {
+        font-size: 1.5rem;
+    }
+   header.scrolled {
+    margin-top: 40px;
+     }
+   header {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    
+   }
+    /* Hero section */
+    .center-bar {
+        width: 700px;
+        height: 600px;
+        padding: 10px;
+        padding-left: 100px;
+      padding-right: 100px;
+    }
+    .rock {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 120px;
+        font-size: 1.3rem;
+    }
+    .rock h1 {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+    .rock button {
+        font-size: 1rem;
+        height: 45px;
+        margin: 10px 5px;
+    }
+     .rock p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+     }
+    /* Features - 2 columns */
+    .main-section {
+        grid-template-columns: 1fr ;
+        gap: 20px;
+        padding-left: 50px;
+        margin-left: 50px;
+    }
+    .item {
+        padding: 15px;
+        justify-self: center;
+        width: 600px;
+    }
+    .item1 {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 600px;
+
+    }
+    .item1 h2 {
+        font-size: 2rem;
+    }
+    .item1 p {
+        font-size: 1.5rem;
+    }
+    .item h3 {
+        font-size: 1.8rem;
+    }
+    .item p {
+        font-size: 1.5rem;
+    }
+
+    /* Pricing - Stack vertically */
+    .great {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .main-area {
+        height:  250vh;
+        padding-bottom: 100px;
+        padding-right: 100px;
+    }
+    .measures {
+        height: auto;
+    }
+    .command {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+        padding-left: 100px;
+        padding-right: 0px;
+    }
+        #next li {
+        margin: 0;
+        word-spacing: 5px;
+        font-size: 1.5rem;
+    }
+    .great h2 {
+        font-size: 2rem;
+    }
+    .great p {
+        font-size: 1.5rem;
+    }
+    #next p {
+        font-size: 1.5rem;
+    }
+    #next ul {
+         margin-left: 0;
+        padding: 0;
+    }
+    
+    #next h2 {
+        font-size: 2rem;
+        font-weight: bold;
+
+    }
+    #next h3 {
+        font-size: 1.5rem;
+    }
+       #next button {
+        font-size: 1.5rem;
+       }
+    #previous h2 {
+        font-size: 2rem;
+        word-spacing: 5px;
+        font-weight: bold;
+
+    }
+    #previous h3 {
+        font-size: 1.5rem;
+    }
+    #previous ul {
+        margin-left: 0;
+        padding: 0;
+    }
+    #previous p {
+        font-size: 1.5rem;
+    }
+    
+    #previous li {
+        margin: 0;
+        word-spacing: 7px;
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    #previous button {
+        margin-top: 100px;
+        font-size: 1.5rem;
+    }
+    
+    #follow li{
+        word-spacing: 5px;
+        font-size: 1.5rem;
+    }
+    #follow p {
+        font-size: 1.5rem;
+    }
+    #follow h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #follow h3 {
+        font-size: 1.5rem;
+    }
+    #follow button {
+         font-size: 1.5rem;
+    }
+
+    /* Form adjustments */
+   .content p {
+    font-size: 1.5rem;
+   }
+   .content h3 {
+    font-size: 2rem;
+   }
+    form {
+        padding-left: 150px;
+        padding-right: 150px;
+        width: auto;
+    }
+    form input {
+        width: 500px;
+
+    }
+    form label {
+        font-size: 1.5rem;
+    }
+    form button {
+        font-size: 1.5rem;
+        width: 500px;
+    }
+    .side-bar p {
+        font-size: 1.5rem;
+    }
+    .footer h4 {
+        font-size: 2rem;
+    }
+    .footer p {
+        font-size: 1.5rem;
+    }
+    .footer {
+        justify-self: center;
+        margin: 0;
+        width: 750px;
+        padding-right: 200px;
+        
+    }
+} 
+(min-width: 480px) and (max-width: 767px) {
   /* CONTAINER & BODY */
   body {
     max-width: 100%;
