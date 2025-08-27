@@ -934,138 +934,124 @@ form button a {
     }
 } 
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
-    /* General and Centering */
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
+  /* General Adjustments */
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .container {
+    margin: 0 10px;
+    padding: 20px 10px;
+  }
+  
+  /* Header & Navigation */
+  header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .correct {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .image-banner {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .company-logo img {
+    position: static;
+    display: inline-block;
+  }
+  .company-name {
+    margin: 10px 0;
+    position: static;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .nav li {
+    font-size: 1rem;
+  }
+  .nav a {
+    display: block;
+    padding: 5px;
+  }
+  
+  /* Main Content Sections */
+  .center-bar {
+    height: auto;
+    padding: 50px 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  .rock {
+    padding: 0 10px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+  .rock h1 {
+    font-size: 2.5rem;
+  }
+  .rock button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .item1 {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .item1 h2 {
+    font-size: 1.5rem;
+  }
+  .item1 p {
+    font-size: 1rem;
+  }
+  .measures {
+    margin-left: 10px;
+    height: auto;
+  }
+  .command {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  /* Form Section */
+  .content {
+    padding: 30px 10px;
+  }
+  form {
+    padding: 20px;
+  }
+  form input,
+  form .message input,
+  form button {
+    width: 100%;
+  }
+  form button {
+    margin-top: 30px;
+  }
 
-    .container, .main-area {
-        margin: 0 10px; /* Reduced side margins for perfect fit */
-        padding: 10px;
-    }
-
-    /* Header and Navigation */
-    header {
-        position: static; /* Change from fixed to static for better mobile flow */
-    }
-
-    .correct {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .image-banner {
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 0;
-    }
-
-    .company-logo img {
-        position: static;
-        margin: 0;
-    }
-    
-    .company-name {
-        position: static;
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        gap: 0.5rem;
-    }
-
-    .nav li {
-        text-align: center;
-        width: 100%;
-    }
-
-    .nav a {
-        display: block; /* Make links full-width for easier tapping */
-        padding: 10px;
-    }
-
-    .nav a:hover {
-        background-color: transparent; /* Adjust hover for touch devices */
-        color: #008000;
-    }
-
-    /* Main Sections */
-    .center-bar {
-        height: auto;
-        padding: 20px 10px;
-    }
-
-    .rock {
-        padding: 20px 10px;
-        margin-top: 100px; /* Adjust top margin */
-        font-size: 1rem;
-    }
-
-    .rock h1 {
-        font-size: 2rem;
-    }
-
-    .main-section {
-        grid-template-columns: 1fr; /* Stack items in a single column */
-        gap: 20px;
-    }
-
-    .item1, .great {
-        display: block; /* Changes inline-block to block */
-        text-align: center;
-        padding: 0;
-        margin: 0 auto; /* Centers block elements horizontally */
-    }
-
-    .command {
-        display: block; /* Changes inline-block to block */
-        width: 90%; /* Occupy most of the width */
-        margin: 20px auto; /* Centers and adds spacing */
-    }
-    
-    .measures {
-        height: auto;
-        margin: 0;
-    }
-
-    /* Form */
-    form {
-        padding: 20px 10px; /* Reduced padding for smaller screens */
-        margin: 0 auto; /* Centers the form */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    form input,
-    form .message input,
-    form button {
-        width: 100%; /* Make inputs and button full-width */
-        max-width: 300px; /* Keep a readable max-width */
-        box-sizing: border-box; /* Include padding/border in width */
-    }
-
-    form label {
-        float: none; /* Remove float for better stacking */
-        text-align: left;
-        width: 100%;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 30px 10px;
-    }
+  /* Footer */
+  .footer {
+    padding: 30px 10px;
+  }
+  .footer p span {
+    margin-left: 0;
+    display: block;
+  }
 }
-
 
 
 
