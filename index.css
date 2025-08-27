@@ -933,7 +933,7 @@ form button a {
         
     }
 } 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 370px) and (max-width: 480px) {
   /* BODY AND CONTAINER */
   body {
     max-width: 100%;
