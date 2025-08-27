@@ -944,7 +944,7 @@ form button a {
         margin-left: 5px;
         margin-right: 5px;
         padding: 15px;
-        width: 600px;
+        width: 750px;
     }
     .center-bar {
         width: 750px;
@@ -1050,7 +1050,7 @@ form button a {
         grid-template-columns: 1fr !important;
         gap: 25px !important;
         padding: 20px;
-        width: 600px;
+        width: 700px;
         margin: 0 auto;
     }
     .item {
@@ -1084,7 +1084,7 @@ form button a {
 
     /* Pricing - Stack vertically */
     .great {
-        width: 350px;
+        width: 500px;
         justify-self: center;
         padding-left: 150px;
         align-items: center;
@@ -1102,7 +1102,7 @@ form button a {
     }
     .main-area {
         padding-bottom: 20px;
-        width: 600px;
+        width: 800px;
         padding-right: 100px;
         justify-self: center;
         padding-left: 250px;
@@ -1114,7 +1114,7 @@ form button a {
     .command {
         justify-self: center;
         display: block;
-        width: 90%;
+        width: 700px;
         margin: 15px auto;
         height: 70%;
 
@@ -1129,7 +1129,7 @@ form button a {
         font-size: 0.9rem;
     }
     #next {
-        width: 350px;
+        width: 500px;
 
     }
         #next p {
@@ -1149,7 +1149,7 @@ form button a {
         font-size: 1.5rem;
     }
     #previous {
-      width: 350px;
+      width: 500px;
     }
     #previous h2 {
         font-size: 2rem;
@@ -1178,7 +1178,7 @@ form button a {
         margin-top: 80px;
     }
     #follow {
-     width: 350px;
+     width: 500px;
   }
     
     #follow li{
