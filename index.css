@@ -689,506 +689,176 @@ form button a {
     font-weight: bold;
   }
 }
-/* Tablets and larger mobile devices (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
+
+  
+
+@media (min-width: 350px) and (max-width: 480px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  .image-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .company-logo img {
+    position: static;
+    margin-top: 10px;
+  }
+  .company-name {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 0;
+  }
+  .nav li {
+    font-size: 1rem;
+  }
+  .center-bar {
+    height: auto;
+    padding: 20px;
+  }
+  .rock {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+  }
+  .rock h1 {
+    font-size: 2.5rem;
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .item1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .great {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .measures {
+    height: auto;
+    margin-left: 10px;
+  }
+  .command {
+    width: 90%;
+    margin: 20px auto;
+  }
+  form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  form input,
+  form button {
+    width: 100%;
+  }
+  .footer {
+    padding: 20px;
+  }
+}
+
+
+@media (min-width: 300px) and (max-width: 349px) {
+    /* Styles for screens between 300px and 349px go here */
     .container {
         margin-left: 10px;
         margin-right: 10px;
         padding: 20px;
     }
-
-    /* Header adjustments */
+    header h2 {
+        font-size: 1.5rem;
+    }
+    .nav ul {
+        display: none; /* Hide navigation on very small screens */
+    }
     .image-banner {
         margin-left: 10px;
     }
-    
+    .company-logo img {
+        width: 50px;
+        height: auto;
+    }
     .company-name {
-        margin-left: 80px;
-        font-size: 1.5rem;
-    }
-    
-    .image-banner h2 {
-        font-size: 1.5rem;
-    }
-
-    /* Navigation */
-    .nav ul {
-        justify-content: center;
-        margin-left: 0;
-        gap: 0.5rem;
-        padding: 0.5rem;
-        flex-wrap: wrap;
-    }
-    
-    .nav li {
+        margin-left: 60px;
+        margin-top: 10px;
         font-size: 1rem;
     }
-
-    /* Hero section */
-    .center-bar {
-        height: 600px;
-        padding: 15px;
-    }
-    
     .rock {
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-top: 150px;
-        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 50px;
+        font-size: 1rem;
     }
-    
     .rock h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
-    
     .rock button {
         font-size: 1rem;
         height: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-
-    /* Main section grid */
+    .center-bar {
+        height: 500px;
+    }
     .main-section {
-        grid-template-columns: 1fr 1fr;
-        gap: 0.8rem;
+        grid-template-columns: 1fr; /* Stack columns on top of each other */
+        gap: 20px;
     }
-    
     .item {
         font-size: 1rem;
         padding: 15px;
     }
-    
     .item1 {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    
     .item1 h2 {
-        font-size: 1.8rem;
-    }
-    
-    .item1 p {
-        font-size: 1.2rem;
-    }
-
-    /* Great section */
-    .great {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 50px;
-    }
-    
-    .great h2 {
-        font-size: 1.8rem;
-    }
-    
-    .great p {
-        font-size: 1rem;
-    }
-
-    /* Command cards */
-    .measures {
-        height: auto;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .command {
-        width: 45%;
-        margin: 10px 2%;
-        height: auto;
-        min-height: 300px;
-        display: inline-block;
-        vertical-align: top;
-    }
-    
-    #next h2, #previous h2, #follow h2 {
         font-size: 1.5rem;
-        margin-top: 5%;
     }
-    
-    #next li, #previous li, #follow li {
+    .item1 p {
         font-size: 1rem;
     }
-    
-    #next button, #previous button, #follow button {
-        margin-top: 40px;
-        font-size: 1rem;
-    }
-
-    /* Content section */
-    .content {
-        padding: 40px 20px;
-    }
-    
-    .content h3 {
-        font-size: 1.8rem;
-    }
-    
-    .content p {
-        font-size: 1.2rem;
-    }
-
-    /* Form */
-    form {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 60px;
-        padding-top: 30px;
-    }
-    
-    form input {
-        width: 100%;
-        max-width: 400px;
-        height: 35px;
-    }
-    
-    form .message input {
-        height: 80px;
-    }
-    
-    form label {
-        font-size: 1rem;
-    }
-    
-    form button {
-        width: 100%;
-        max-width: 400px;
-        padding: 15px;
-        margin-top: 60px;
-        font-size: 1rem;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 30px 20px;
-    }
-    
-    .footer h4 {
-        font-size: 1rem;
-    }
-    
-    .footer p {
-        font-size: 1rem;
-    }
-    
-    .footer p span {
+    .measures {
         margin-left: 10px;
+        height: auto;
     }
-
-    /* Side bar */
-    .side-bar {
-        padding: 15px;
-    }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
-  /* General Adjustments */
-  body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  .container {
-    margin: 0 10px;
-    padding: 20px 10px;
-  }
-  
-  /* Header & Navigation */
-  header {
-    flex-direction: column;
-    padding: 10px 0;
-  }
-  .correct {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .image-banner {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  .company-logo img {
-    position: static;
-    display: inline-block;
-  }
-  .company-name {
-    margin: 10px 0;
-    position: static;
-  }
-  .nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 0;
-  }
-  .nav li {
-    font-size: 1rem;
-  }
-  .nav a {
-    display: block;
-    padding: 5px;
-  }
-  
-  /* Main Content Sections */
-  .center-bar {
-    height: auto;
-    padding: 50px 10px;
-    background-size: cover;
-    background-position: center;
-  }
-  .rock {
-    padding: 0 10px;
-    margin-top: 50px;
-    font-size: 1.2rem;
-  }
-  .rock h1 {
-    font-size: 2.5rem;
-  }
-  .rock button {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .main-section {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px 0;
-  }
-  .item1 {
-    padding: 0 20px;
-    text-align: center;
-  }
-  .item1 h2 {
-    font-size: 1.5rem;
-  }
-  .item1 p {
-    font-size: 1rem;
-  }
-  .measures {
-    margin-left: 10px;
-    height: auto;
-  }
-  .command {
-    width: 90%;
-    margin: 20px auto;
-    display: block;
-  }
-  
-  /* Form Section */
-  .content {
-    padding: 30px 10px;
-  }
-  form {
-    padding: 20px;
-  }
-  form input,
-  form .message input,
-  form button {
-    width: 100%;
-  }
-  form button {
-    margin-top: 30px;
-  }
-
-  /* Footer */
-  .footer {
-    padding: 30px 10px;
-  }
-  .footer p span {
-    margin-left: 0;
-    display: block;
-  }
-}
-
-
-
-
-/* Very small screens (below 320px) */
-/* General Layout & Responsiveness */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* A best practice for modern CSS */
-}
-
-.container {
-  max-width: 1200px; /* Establishes a maximum width for the main content area */
-  margin: 0 auto; /* This correctly centers the container on all screen sizes */
-  padding: 0 20px; /* Provides some padding on the sides for smaller screens */
-}
-
-/* Header & Navigation */
-header {
-  /* Use flexbox for robust alignment */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  color: #fff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.company-logo img {
-  display: block;
-}
-
-.company-name {
-  margin-left: 20px; /* Use a relative margin for spacing */
-}
-
-.nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Hero Section */
-.center-bar {
-  background: url(./images/navy\ blue.webp) no-repeat center center/cover;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-}
-
-.rock {
-  max-width: 800px;
-  margin: 0 auto; /* Centers the content block */
-}
-
-.rock h1 {
-  font-size: 4rem;
-}
-
-/* Services Section */
-.main-section {
-  /* A responsive grid that automatically adjusts column count */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 50px 0;
-}
-
-.item {
-  /* ... existing styles ... */
-}
-
-.item1 {
-  /* Proper centering for a single block element */
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Pricing/Plans Section */
-.measures {
-  display: flex;
-  flex-wrap: wrap; /* Allows cards to wrap to the next line */
-  justify-content: center; /* Centers the cards horizontally */
-  gap: 20px;
-  padding: 50px 0;
-}
-
-.command {
-  flex: 1 1 280px; /* A flexible way to create columns that wrap */
-  /* ... existing styles ... */
-}
-
-/* Form Section */
-form {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-form input {
-  width: 100%;
-  box-sizing: border-box; /* Prevents padding from breaking the width */
-}
-
-/* Footer Section */
-.footer {
-  /* ... existing styles ... */
-  background-size: cover;
-}
-
-/* Media Query for 319px and below */
-@media screen and (max-width: 319px) {
-  /* Adjusting font sizes for readability */
-  .rock h1 {
-    font-size: 2.5rem;
-  }
-  .rock {
-    font-size: 1rem;
-  }
-
-  /* Stacking the header elements */
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  /* Stacking grid items into a single column */
-  .main-section {
-    grid-template-columns: 1fr;
-  }
-
-  /* Stacking form elements */
-  form button,
-  form input {
-    max-width: 100%;
-  }
-  
-  /* Stacking cards on top of each other */
-  .measures {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .command {
-    width: 90%;
-  }
-}
-/* ========================================
-   UTILITY CLASSES FOR MOBILE
-======================================== */
-
-/* Hide elements on mobile */
-@media (max-width: 767px) {
-    .hide-mobile {
-        display: none !important;
-    }
-}
-
-/* Show only on mobile */
-.show-mobile {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    .show-mobile {
+    .command {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
         display: block;
     }
+    .content h3 {
+        font-size: 1.5rem;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+    form {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+    }
+    form input,
+    form .message input {
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't add to the width */
+    }
+    form button {
+        width: 100%;
+    }
+    .footer {
+        padding: 20px;
+    }
+    .footer p {
+        font-size: 0.9rem;
+    }
 }
-
