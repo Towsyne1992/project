@@ -694,141 +694,318 @@ form button a {
 }
 
 
-@media screen and (min-width: 350px) and (max-width: 480px) {
-  /* General Layout Adjustments */
-  body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
+/* Mobile screens (230px to 480px) - Expanded layout */
+@media (min-width: 230px) and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-  .container {
-    margin: 0;
-    padding: 10px;
-    width: auto;
-  }
-  
-  /* Header and Navigation */
-  header {
-    width: 100%;
-    position: static; /* Change to static for better mobile flow */
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .correct {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .company-logo img {
-    position: static;
-    margin: 0;
-    width: 50px; /* Adjust logo size */
-    height: auto;
-  }
+    .container {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 25px;
+    }
 
-  .company-name {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  .nav ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin-top: 10px;
-  }
-  
-  .nav li {
-    font-size: 1rem;
-    margin: 5px 0;
-  }
+    /* Header adjustments */
+    header {
+        padding: 12px;
+    }
 
-  /* Main Content Sections */
-  .center-bar {
-    height: auto;
-    padding: 20px 10px;
-  }
-  
-  .rock {
-    padding: 10px;
-    margin-top: 100px;
-    font-size: 1.2rem;
-  }
-  
-  .rock h1 {
-    font-size: 2.5rem;
-  }
-  
-  .main-section {
-    grid-template-columns: 1fr; /* Stack items on small screens */
-    gap: 1.5rem;
-    padding: 10px;
-  }
-  
-  .item1 {
-    padding: 20px;
-    text-align: center;
-  }
+    .image-banner {
+        margin-left: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .item1 h2 {
-    font-size: 1.5rem;
-  }
-  
-  .measures {
-    height: auto;
-    margin: 0;
-    padding: 10px;
-    display: flex; /* Adjust to a flexbox for mobile stacking */
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .command {
-    width: 90%;
-    margin: 10px 0;
-  }
+    .company-logo img {
+        position: relative;
+        width: 70px;
+        height: auto;
+    }
 
-  #next h2,
-  #previous h2,
-  #follow h2 {
-    font-size: 1.5rem;
-    margin-top: 5%;
-  }
+    .company-name {
+        margin-left: 0;
+        margin-top: 12px;
+        font-size: 1.4rem;
+    }
 
-  #next li,
-  #previous li,
-  #follow li {
-    font-size: 1rem;
-  }
+    .image-banner h2 {
+        font-size: 1.8rem;
+    }
 
-  /* Form and Footer */
-  form {
-    padding: 20px;
-    margin: 10px;
-  }
-  
-  form input,
-  form .message input,
-  form button {
-    width: 100%;
-  }
+    /* Navigation */
+    .nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-left: 0;
+        padding: 0.8rem;
+        margin-top: 15px;
+        justify-content: center;
+    }
 
-  .footer {
-    padding: 20px 10px;
-  }
-  
-  .footer p span {
-    display: block;
-    margin-left: 0;
-    margin-top: 5px;
-  }
+    .nav li {
+        font-size: 1.1rem;
+    }
+
+    /* Center banner */
+    .center-bar {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .rock {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 60px;
+        font-size: 1.4rem;
+    }
+
+    .rock h1 {
+        font-size: 2.5rem;
+    }
+
+    .rock button {
+        font-size: 1.1rem;
+        height: 45px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 90%;
+        margin-top: 25px;
+    }
+
+    /* Main section grid - EXPANDED */
+    .main-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .item {
+        font-size: 1.1rem;
+        padding: 20px;
+        margin: 15px 0;
+        min-height: 200px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .item1 {
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .item1 h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .item1 p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    /* Main area - SIGNIFICANTLY EXPANDED */
+    .main-area {
+        padding: 30px 15px;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .great {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .great h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .great p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    /* Measures section - EXPANDED */
+    .measures {
+        height: auto;
+        min-height: 120vh; /* Significantly increased height */
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 20px 0;
+    }
+
+    /* Command cards - GREATLY EXPANDED */
+    .command {
+        width: calc(100% - 30px);
+        margin: 25px 15px;
+        height: auto;
+        min-height: 450px; /* Increased from 300px */
+        padding: 25px;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .command:hover {
+        transform: scale(1.02); /* Subtle hover effect */
+    }
+
+    /* Individual command styling - EXPANDED CONTENT */
+    #next, #previous, #follow {
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #next h2,
+    #previous h2,
+    #follow h2 {
+        font-size: 1.8rem;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #next ul,
+    #previous ul,
+    #follow ul {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 0;
+        flex-grow: 1;
+    }
+
+    #next li,
+    #previous li,
+    #follow li {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+        padding: 8px 0;
+        line-height: 1.4;
+    }
+
+    #next button,
+    #previous button,
+    #follow button {
+        margin-top: 25px;
+        font-size: 1.1rem;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    #previous h5 {
+        width: 70%;
+        font-size: 1rem;
+        padding: 8px;
+        margin: 10px auto;
+    }
+
+    /* Content section - EXPANDED */
+    .content {
+        padding: 40px 20px;
+        min-height: 50vh;
+    }
+
+    .content h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    /* Form - EXPANDED */
+    form {
+        padding: 30px 25px;
+        margin: 25px 15px;
+        min-height: 400px;
+    }
+
+    form input {
+        width: 100%;
+        max-width: 400px;
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        padding: 8px 12px;
+        box-sizing: border-box;
+    }
+
+    form .message input {
+        height: 100px;
+        resize: vertical;
+    }
+
+    form label {
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 8px;
+        float: none;
+        font-weight: 500;
+    }
+
+    form button {
+        width: 100%;
+        max-width: 400px;
+        padding: 18px;
+        margin-top: 35px;
+        font-size: 1.1rem;
+        border-radius: 12px;
+    }
+
+    /* Footer - EXPANDED */
+    .footer {
+        padding: 40px 20px;
+        min-height: 200px;
+    }
+
+    .footer h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .footer p span {
+        margin-left: 15px;
+        display: inline-block;
+        margin-top: 8px;
+    }
+
+    /* Side bar - EXPANDED */
+    .side-bar {
+        padding: 25px;
+        min-height: 300px;
+    }
+
+    /* Additional spacing for better mobile UX */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Ensure text is readable and clickable areas are large enough */
+    a, button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
-
 
 /* Medium screens - Tablets and small laptops (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
@@ -912,6 +1089,7 @@ form button a {
         height: auto;
     }
     
+    
     .command {
         width: 100%;
         margin-left: 15px;
@@ -994,252 +1172,6 @@ form button a {
 
   
 
-
-/* Mobile screens (349px and below) */
-@media (max-width: 349px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 20px;
-    }
-
-    /* Header adjustments */
-    header {
-        padding: 10px;
-    }
-
-    .image-banner {
-        margin-left: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .company-logo img {
-        position: relative;
-        width: 60px;
-        height: auto;
-    }
-
-    .company-name {
-        margin-left: 0;
-        margin-top: 10px;
-        font-size: 1.2rem;
-    }
-
-    .image-banner h2 {
-        font-size: 1.5rem;
-    }
-
-    /* Navigation */
-    .nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-left: 0;
-        padding: 0.5rem;
-        margin-top: 10px;
-    }
-
-    .nav li {
-        font-size: 1rem;
-    }
-
-    /* Center banner */
-    .center-bar {
-        height: auto;
-        padding: 40px 10px;
-    }
-
-    .rock {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 50px;
-        font-size: 1.2rem;
-    }
-
-    .rock h1 {
-        font-size: 2rem;
-    }
-
-    .rock button {
-        font-size: 1rem;
-        height: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    /* Main section grid */
-    .main-section {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0;
-    }
-
-    .item {
-        font-size: 1rem;
-        padding: 15px;
-        margin: 10px 0;
-    }
-
-    .item1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: left;
-    }
-
-    .item1 h2 {
-        font-size: 1.5rem;
-    }
-
-    .item1 p {
-        font-size: 1.2rem;
-    }
-
-    /* Main area */
-    .main-area {
-        padding: 20px 10px;
-    }
-
-    .great {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 50px;
-    }
-
-    .great h2 {
-        font-size: 1.5rem;
-    }
-
-    .great p {
-        font-size: 1rem;
-    }
-
-    /* Measures section */
-    .measures {
-        height: auto;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .command {
-        width: 100%;
-        margin: 20px 0;
-        margin-left: 0;
-        margin-right: 0;
-        height: auto;
-        min-height: 300px;
-        display: block;
-    }
-
-    .command:hover {
-        transform: none;
-    }
-
-    #next h2,
-    #previous h2,
-    #follow h2 {
-        font-size: 1.5rem;
-        margin-top: 5%;
-    }
-
-    #next ul,
-    #previous ul,
-    #follow ul {
-        margin-top: 5%;
-    }
-
-    #next li,
-    #previous li,
-    #follow li {
-        font-size: 1rem;
-    }
-
-    #next button,
-    #previous button,
-    #follow button {
-        margin-top: 30px;
-        font-size: 1rem;
-    }
-
-    #previous h5 {
-        width: 60%;
-        font-size: 0.9rem;
-    }
-
-    /* Content section */
-    .content {
-        padding: 30px 15px;
-    }
-
-    .content h3 {
-        font-size: 1.5rem;
-    }
-
-    .content p {
-        font-size: 1.2rem;
-    }
-
-    /* Form */
-    form {
-        padding: 20px;
-        margin: 20px 10px;
-    }
-
-    form input {
-        width: 100%;
-        max-width: 280px;
-        height: 35px;
-    }
-
-    form .message input {
-        height: 80px;
-    }
-
-    form label {
-        font-size: 1rem;
-        display: block;
-        margin-bottom: 5px;
-        float: none;
-    }
-
-    form button {
-        width: 100%;
-        max-width: 280px;
-        padding: 15px;
-        margin-top: 30px;
-        font-size: 1rem;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 30px 15px;
-    }
-
-    .footer h4 {
-        font-size: 1rem;
-    }
-
-    .footer p {
-        font-size: 1rem;
-    }
-
-    .footer p span {
-        margin-left: 10px;
-        display: block;
-        margin-top: 10px;
-    }
-
-    /* Side bar */
-    .side-bar {
-        padding: 15px;
-    }
-}
 
 
 
