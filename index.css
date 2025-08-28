@@ -913,7 +913,7 @@ form button a {
     }
     
     .command {
-        width: 40%;
+        width: 80%;
         margin-left: 15px;
         margin-right: 15px;
         height: auto;
@@ -994,6 +994,252 @@ form button a {
 
   
 
+
+/* Mobile screens (349px and below) */
+@media (max-width: 349px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 10px;
+    }
+
+    .image-banner {
+        margin-left: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-logo img {
+        position: relative;
+        width: 60px;
+        height: auto;
+    }
+
+    .company-name {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .image-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation */
+    .nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-left: 0;
+        padding: 0.5rem;
+        margin-top: 10px;
+    }
+
+    .nav li {
+        font-size: 1rem;
+    }
+
+    /* Center banner */
+    .center-bar {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .rock {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+
+    .rock h1 {
+        font-size: 2rem;
+    }
+
+    .rock button {
+        font-size: 1rem;
+        height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Main section grid */
+    .main-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .item {
+        font-size: 1rem;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .item1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    .item1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .item1 p {
+        font-size: 1.2rem;
+    }
+
+    /* Main area */
+    .main-area {
+        padding: 20px 10px;
+    }
+
+    .great {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+
+    .great h2 {
+        font-size: 1.5rem;
+    }
+
+    .great p {
+        font-size: 1rem;
+    }
+
+    /* Measures section */
+    .measures {
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .command {
+        width: 100%;
+        margin: 20px 0;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        min-height: 300px;
+        display: block;
+    }
+
+    .command:hover {
+        transform: none;
+    }
+
+    #next h2,
+    #previous h2,
+    #follow h2 {
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+
+    #next ul,
+    #previous ul,
+    #follow ul {
+        margin-top: 5%;
+    }
+
+    #next li,
+    #previous li,
+    #follow li {
+        font-size: 1rem;
+    }
+
+    #next button,
+    #previous button,
+    #follow button {
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+
+    #previous h5 {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+
+    /* Content section */
+    .content {
+        padding: 30px 15px;
+    }
+
+    .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    /* Form */
+    form {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    form input {
+        width: 100%;
+        max-width: 280px;
+        height: 35px;
+    }
+
+    form .message input {
+        height: 80px;
+    }
+
+    form label {
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 5px;
+        float: none;
+    }
+
+    form button {
+        width: 100%;
+        max-width: 280px;
+        padding: 15px;
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer h4 {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+
+    .footer p span {
+        margin-left: 10px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Side bar */
+    .side-bar {
+        padding: 15px;
+    }
+}
 
 
 
