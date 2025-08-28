@@ -997,8 +997,8 @@ form button a {
 
 
 
-/* Mobile screens (350px and below) */
-@media (max-width: 349px) {
+/* Mobile screens (348px and below) */
+@media (max-width: 348px) {
     body {
         margin: 0;
         padding: 0;
