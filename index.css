@@ -241,7 +241,7 @@ padding: 50px;
         font-size: 1.2rem;
     }
         #next button  {
-        margin-top: 80px;
+        margin-top: 30px;
         background-color: green;
         text-align: center;
         width: 100%;
@@ -289,7 +289,7 @@ padding: 50px;
         border-radius: 10px;
     }
         #previous button  {
-         margin-top: 80px;
+         margin-top: 30px;
          background-color: #fff;
         text-align: center;
         width: 100%;
@@ -321,7 +321,7 @@ padding: 50px;
         font-size: 1.2rem;
     }
         #follow button  {
-        margin-top: 80px;
+        margin-top: 30px;
         background-color: darkblue;
         text-align: center;
         width: 100%;
@@ -693,271 +693,304 @@ form button a {
   }
 }
 
-  
 
-@media (min-width: 350px) and (max-width: 480px) {
-  .container {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 20px;
+@media screen and (min-width: 350px) and (max-width: 480px) {
+  /* General Layout Adjustments */
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
   }
-  .image-banner {
+
+  .container {
+    margin: 0;
+    padding: 10px;
+    width: auto;
+  }
+  
+  /* Header and Navigation */
+  header {
+    width: 100%;
+    position: static; /* Change to static for better mobile flow */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .correct {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
+  
   .company-logo img {
     position: static;
-    margin-top: 10px;
+    margin: 0;
+    width: 50px; /* Adjust logo size */
+    height: auto;
   }
+
   .company-name {
-    margin-left: 0;
-    margin-top: 10px;
+    margin: 0;
+    font-size: 1.5rem;
   }
+  
   .nav ul {
     flex-direction: column;
-    gap: 0.5rem;
-    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
   }
+  
   .nav li {
     font-size: 1rem;
+    margin: 5px 0;
   }
+
+  /* Main Content Sections */
   .center-bar {
     height: auto;
-    padding: 20px;
+    padding: 20px 10px;
   }
+  
   .rock {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
     margin-top: 100px;
+    font-size: 1.2rem;
   }
+  
   .rock h1 {
     font-size: 2.5rem;
   }
+  
   .main-section {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr; /* Stack items on small screens */
+    gap: 1.5rem;
+    padding: 10px;
   }
+  
   .item1 {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    text-align: center;
   }
-  .great {
-    padding-left: 20px;
-    padding-right: 20px;
+
+  .item1 h2 {
+    font-size: 1.5rem;
   }
+  
   .measures {
     height: auto;
-    margin-left: 10px;
+    margin: 0;
+    padding: 10px;
+    display: flex; /* Adjust to a flexbox for mobile stacking */
+    flex-direction: column;
+    align-items: center;
   }
+  
   .command {
     width: 90%;
-    margin: 20px auto;
+    margin: 10px 0;
   }
+
+  #next h2,
+  #previous h2,
+  #follow h2 {
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+
+  #next li,
+  #previous li,
+  #follow li {
+    font-size: 1rem;
+  }
+
+  /* Form and Footer */
   form {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    margin: 10px;
   }
+  
   form input,
+  form .message input,
   form button {
     width: 100%;
   }
+
   .footer {
-    padding: 20px;
+    padding: 20px 10px;
+  }
+  
+  .footer p span {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
   }
 }
 
 
-@media (min-width: 300px) and (max-width: 349px) {
-    /* Styles for screens between 300px and 349px go here */
-    .container {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 20px;
+/* Medium screens - Tablets and small laptops (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Header adjustments */
+    .nav ul {
+        margin-left: 50px;
+        gap: 0.8rem;
+        padding: 0.8rem;
     }
-    header h2 {
+    
+    .nav li {
+        font-size: 1rem;
+    }
+    
+    .company-name {
+        margin-left: 80px;
         font-size: 1.5rem;
     }
-    .nav ul {
-        display: none; /* Hide navigation on very small screens */
+    
+    .image-banner h2 {
+        font-size: 1.8rem;
     }
-    .image-banner {
-        margin-left: 10px;
-    }
-    .company-logo img {
-        width: 50px;
-        height: auto;
-    }
-    .company-name {
-        margin-left: 60px;
-        margin-top: 10px;
-        font-size: 1rem;
-    }
+    
+    /* Hero section */
     .rock {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 50px;
-        font-size: 1rem;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 150px;
     }
+    
     .rock h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
-    .rock button {
-        font-size: 1rem;
-        height: 40px;
-        padding-left: 15px;
-        padding-right: 15px;
+    
+    .rock {
+        font-size: 1.5rem;
     }
-    .center-bar {
-        height: 500px;
-    }
+    
+    /* Main content grid */
     .main-section {
-        grid-template-columns: 1fr; /* Stack columns on top of each other */
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
     }
+    
     .item {
         font-size: 1rem;
         padding: 15px;
     }
+    
+    /* Centered content sections */
     .item1 {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
+    
     .item1 h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
+    
     .item1 p {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
+    
+    .great {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 80px;
+    }
+    
+    .great h2 {
+        font-size: 1.8rem;
+    }
+    
+    .great p {
+        font-size: 1.1rem;
+    }
+    
+    /* Command cards */
     .measures {
-        margin-left: 10px;
+        margin-left: 50px;
         height: auto;
     }
+    
     .command {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        display: block;
+        width: 40%;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: auto;
+        min-height: 400px;
     }
-    .content h3 {
+    
+    #next h2, #previous h2, #follow h2 {
         font-size: 1.5rem;
+        margin-top: 5%;
     }
-    .content p {
+    
+    #next li, #previous li, #follow li {
         font-size: 1rem;
     }
+    
+    #next button, #previous button, #follow button {
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Contact form */
+    .content {
+        padding: 40px 20px;
+    }
+    
+    .content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .content p {
+        font-size: 1.3rem;
+    }
+    
     form {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 60px;
+        padding-top: 30px;
     }
-    form input,
+    
+    form input {
+        width: 400px;
+        height: 35px;
+    }
+    
     form .message input {
-        width: 100%;
-        box-sizing: border-box; /* Ensures padding doesn't add to the width */
+        height: 80px;
     }
+    
+    form label {
+        font-size: 1.1rem;
+    }
+    
     form button {
-        width: 100%;
+        width: 400px;
+        padding: 15px;
+        margin-top: 80px;
+        font-size: 1.1rem;
     }
+    
+    /* Footer */
     .footer {
-        padding: 20px;
+        padding: 40px 20px;
     }
+    
+    .footer h4 {
+        font-size: 1.1rem;
+    }
+    
     .footer p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+    }
+    
+    .footer p span {
+        margin-left: 15px;
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-  .container {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .image-banner h2 {
-    font-size: 1.5rem;
-  }
-  .company-logo img {
-    width: 60px;
-  }
-  .nav ul {
-    justify-content: center;
-    gap: 0.8rem;
-    margin-top: 15px;
-  }
-  .nav li {
-    font-size: 1rem;
-  }
-  .center-bar {
-    height: 600px;
-    padding: 15px;
-  }
-  .rock {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 150px;
-    font-size: 1.5rem;
-  }
-  .rock h1 {
-    font-size: 2.5rem;
-  }
-  .rock button {
-    font-size: 1rem;
-    height: 40px;
-  }
-  .item1 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .item1 h2 {
-    font-size: 1.5rem;
-  }
-  .item1 p {
-    font-size: 1.2rem;
-  }
-  .main-section {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .measures {
-    height: auto;
-    margin-left: 0;
-  }
-  .command {
-    width: 90%;
-    margin-bottom: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: block;
-    box-sizing: border-box;
-  }
-  .command:hover {
-    transform: none; /* Disables the hover effect for better touch experience */
-  }
-  .content {
-    padding: 30px;
-  }
-  form {
-    padding: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  form input,
-  form button {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  form .message input {
-    height: 80px;
-  }
-  form button {
-    margin-top: 50px;
-  }
-  .footer {
-    padding: 30px;
-  }
-  .footer p {
-    font-size: 1rem;
-  }
-}
+  
+
